@@ -2,7 +2,12 @@
 module.exports = {
   content: ["*"],
   theme: {
-    extend: {},
+    extend: {
+      darkMode: 'class',
+    },
+    fontFamily: {
+      'display': ['Poppins'],
+    }
   },
   plugins: [],
 }

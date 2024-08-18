@@ -5,15 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <div class="h-screen flex w-screen bg-black"> <!-- h-screen : 100vh, w-screen : 100vw-->
-        <div class="h-full w-6/12 bg-white"> <!-- h-full: 100% , w-6/12 : 50%; -->
 
+<body>
+    <div class="h-screen flex w-screen relative bg-black"> <!-- h-screen : 100vh, w-screen : 100vw-->
+        <div class="h-full w-8/12 bg-black"> <!-- h-full: 100% , w-8/12 : 66.67%; -->
+            <i class="fa-solid fa-sun text-3xl text-white mt-4 ms-[820px] absolute"></i> 
+            <div class="container">
+                <h1 class="font-semibold text-6xl font-display text-white m-16" >Lorem ipsum <span class="text-green-500">dolor sit amet  consectetur </span>adipisicing elit.</h1>
+
+                <button class="bg-green-400 p-4 mx-16 text-2xl font-display font-semibold hover:bg-green-600 rounded-md">Explore now!</button>
+            </div>
         </div>
 
         <div class="h-full w-6/12 bg-red-200">
-            <img class="h-full w-full object-cover" src="/model.png" alt=""> <!-- obect-cover : object-fit: cover;-->
+            <img class="h-full w-full object-cover object-top" src="/model.png"> <!-- obect-cover : object-fit: cover;-->
         </div>
     </div>
 </body>
